@@ -38,7 +38,7 @@ class Users {
 	}
 	function transferData($name, $email, $phone){
 		$url = 'http://54.251.37.242:8080/RRDevelopers/Request/query.htm';
-		$query = 'n=dXNlclJSRA==&d=cGFzc3dvcmRSUkQ=&k=MTMw&ReqType=Integration&CCONMobileNo='. $phone .'&CCONEmailID='. $email .'&Name='. $name .'&ProspectName='. $name .'&SourceURL=www.apitest.com';
+		$query = 'n=dXNlclJSRA==&d=cGFzc3dvcmRSUkQ=&k=MTMw&ReqType=Integration&CCONMobileNo='. $phone .'&CCONEmailID='. $email .'&Name='. $name .'&ProspectName='. $name .'&SourceURL=www.apitest.com&ProjectName=City%20of%20Music';
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL, $url);
 		curl_setopt($ch, CURLOPT_HTTPGET, 1);
